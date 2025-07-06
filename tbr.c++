@@ -49,7 +49,7 @@ void printPrompt(String line1, String line2) {
 }
 
 void showRandomPrompt() {
-  int prompt = random(1, 31);
+  int prompt = random(1, 32);
   Serial.print("Showing prompt number: ");
   Serial.println(prompt);
 
@@ -84,6 +84,7 @@ void showRandomPrompt() {
     case 28: printPrompt("KINDLE", "BOOKS"); break;
     case 29: printPrompt("BOOK WITH A", "HOT PERSON"); break;
     case 30: printPrompt("BOOK WITH MORE", "THAN 5 WORDS"); break;
+    case 31: printPrompt("SHELF", "VETERAN"); break;
     default: printPrompt("ERROR", "NO PROMPT"); break;
   }
 }
